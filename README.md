@@ -1,64 +1,57 @@
-\documentclass[11pt]{article}
+# 📊 Prodigy Infotech – Data Science Internship  
+## Task 02: Data Cleaning & Exploratory Data Analysis (EDA)
 
-\usepackage[a4paper,margin=1in]{geometry}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{xcolor}
+### 👤 Intern
+**Aarti Singh**
 
-\title{\textbf{Prodigy Infotech -- Data Science Internship}\\
-Task 02: Data Cleaning \& Exploratory Data Analysis (EDA)}
-\author{\textbf{Aarti Singh}}
-\date{}
+---
 
-\begin{document}
-\maketitle
+## 📌 Task Description
+The objective of this task is to perform **data cleaning** and **exploratory data analysis (EDA)**
+on a dataset in order to understand its structure, explore relationships between variables,
+and extract meaningful insights before applying machine learning techniques.
 
-\section*{Task Overview}
-This task focuses on performing \textbf{data cleaning} and \textbf{exploratory data analysis (EDA)}
-to understand the dataset, identify patterns, and explore relationships between variables.
-EDA is a crucial step before applying any machine learning models.
+---
 
-\section*{Objectives}
-\begin{itemize}[leftmargin=*]
-    \item Clean and preprocess the dataset
-    \item Handle missing and inconsistent values
-    \item Analyze numerical features
-    \item Identify correlations between variables
-    \item Visualize insights using plots
-\end{itemize}
+## 🎯 Objectives
+- Clean and preprocess the dataset  
+- Handle missing and inconsistent values  
+- Analyze numerical features  
+- Identify correlations between variables  
+- Visualize data using plots and heatmaps  
 
-\section*{Dataset}
-\begin{itemize}[leftmargin=*]
-    \item Dataset Used: Titanic Dataset
-    \item Dataset contains passenger information such as age, fare, and survival status
-\end{itemize}
+---
 
-\section*{Tools \& Technologies}
-\begin{itemize}[leftmargin=*]
-    \item Python
-    \item Pandas
-    \item NumPy
-    \item Matplotlib
-    \item Seaborn
-    \item Google Colab / Jupyter Notebook
-\end{itemize}
+## 📂 Dataset
+- **Dataset Used:** Titanic Dataset  
+- The dataset contains passenger information such as age, fare, class, and survival status.
 
-\section*{Exploratory Data Analysis}
-The following steps were performed during EDA:
-\begin{enumerate}[leftmargin=*]
-    \item Data loading and inspection
-    \item Handling missing values
-    \item Selecting numerical features
-    \item Computing correlation matrix
-    \item Visualizing correlations using a heatmap
-\end{enumerate}
+---
 
-\section*{Correlation Heatmap}
-A correlation heatmap was generated to visualize relationships between numerical features in the dataset.
-This helps in identifying strong positive and negative correlations and assists in feature selection.
+## 🛠️ Tools & Technologies
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Google Colab / Jupyter Notebook  
 
-\begin{verbatim}
+---
+
+## 🔍 Exploratory Data Analysis
+The following steps were performed:
+1. Data loading and inspection  
+2. Handling missing values  
+3. Selection of numerical features  
+4. Correlation analysis  
+5. Visualization using a correlation heatmap  
+
+---
+
+## 📈 Correlation Heatmap
+The correlation heatmap below visualizes relationships between numerical features in the dataset:
+
+```python
 plt.figure(figsize=(8,6))
 
 numeric_df = df.select_dtypes(include=['int64', 'float64'])
@@ -66,21 +59,3 @@ sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm')
 
 plt.title("Correlation Heatmap (Numeric Features)")
 plt.show()
-\end{verbatim}
-
-\section*{Key Learnings}
-\begin{itemize}[leftmargin=*]
-    \item Importance of data cleaning before analysis
-    \item Understanding feature relationships through correlation
-    \item Effective visualization techniques in EDA
-    \item Practical exposure to real-world datasets
-\end{itemize}
-
-\section*{Acknowledgement}
-I would like to thank \textbf{Prodigy Infotech} for providing this internship opportunity
-and helping me enhance my data analysis and visualization skills.
-
-\section*{Repository}
-\href{https://github.com/}{GitHub Repository Link}
-
-\end{document}
